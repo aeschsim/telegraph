@@ -5,7 +5,7 @@
 #include "telegraph.h"
 
 
-//Zum testen mit printf, sp‰ter durch /*Code*/ ersetzen!
+//Zum testen mit printf, sp√§ter durch /*Code*/ ersetzen!
 void write_short(void)
 {
 	printf(".");
