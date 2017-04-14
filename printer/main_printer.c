@@ -7,7 +7,8 @@
 #define RELAIS_1	15
 #define RELAIS_2	16
 
-int main(void) {
+int main(void) 
+{
 	wiringPiSetup();
 	pinMode(RELAIS_1, OUTPUT);
 	pinMode(RELAIS_2, OUTPUT);
@@ -47,4 +48,4 @@ int main(void) {
 	write_end();
     fclose (pFile);
     return 0;
-	}
+}
