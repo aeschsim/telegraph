@@ -5,39 +5,34 @@
 #include "telegraph.h"
 
 
-//Zum testen mit printf, sp√§ter durch /*Code*/ ersetzen!
+//Zum testen mit printf, sp‰ter durch /*Code*/ ersetzen!
 void write_short(void)
 {
-	printf(".");
-	/*
+	//printf(".");
 	pencil_down();
 	do_step(1);
 	pencil_up();
-	*/
 }
 
 
 
 void write_long(void)
 {
-	printf("-");
-	/*
+	//printf("-");
+
 	pencil_down();
 	do_step(4);
 	pencil_up();
-	*/
 }
 
 
 
 void write_end(void)
 {
-	printf("XXX");
-	/*
+	//printf("XXX");
 	pencil_down();
 	do_step(8);
 	pencil_up();
-	*/
 }
 
 
@@ -45,7 +40,5 @@ void write_end(void)
 void move(void) 
 {
 	printf(" ");
-	/*
 	do_step(3);
-	*/
 }
