@@ -4,8 +4,8 @@
 #include "printer.h"
 
 #include <wiringPi.h>
-#define RELAIS_1	15
-#define RELAIS_2	16
+#define RELAIS_1	4
+#define RELAIS_2	5
 
 int main(void) {
 	wiringPiSetup();
@@ -13,10 +13,10 @@ int main(void) {
 	pinMode(RELAIS_2, OUTPUT);
 	digitalWrite(RELAIS_1, LOW);
 	digitalWrite(RELAIS_2, LOW);
-	delay(1000);
+	delay(2000);
 	digitalWrite(RELAIS_1, HIGH);
 	digitalWrite(RELAIS_2, HIGH);
-	delay(1000);
+	delay(2000);
 	digitalWrite(RELAIS_1, LOW);
 	digitalWrite(RELAIS_2, LOW);	
 	
@@ -50,7 +50,7 @@ int main(void) {
   				move();
   				break;
 		  }
-
+	delay(100);
 	move();
 	
    }while(1);
