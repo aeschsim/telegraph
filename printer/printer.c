@@ -6,14 +6,14 @@
 
 #define RELAIS_1	4
 #define RELAIS_2	5
+#define TIME		500
 
-
-//Zum testen mit printf, sp‰ter durch /*Code*/ ersetzen!
+//Zum testen mit printf, sp√§ter durch /*Code*/ ersetzen!
 void write_short(void)
 {	
 	digitalWrite(RELAIS_1, HIGH);
 	digitalWrite(RELAIS_2, HIGH);
-	delay(500*1);
+	delay(TIME*1);
 	digitalWrite(RELAIS_2, LOW);
 	digitalWrite(RELAIS_1, LOW);
 }
@@ -24,7 +24,7 @@ void write_long(void)
 {
 	digitalWrite(RELAIS_1, HIGH);
 	digitalWrite(RELAIS_2, HIGH);
-	delay(500*4);
+	delay(TIME*4);
 	digitalWrite(RELAIS_2, LOW);
 	digitalWrite(RELAIS_1, LOW);
 }
@@ -35,7 +35,7 @@ void write_end(void)
 {
 	digitalWrite(RELAIS_1, HIGH);
 	digitalWrite(RELAIS_2, HIGH);
-	delay(500*8);
+	delay(TIME*8);
 	digitalWrite(RELAIS_2, LOW);
 	digitalWrite(RELAIS_1, LOW);
 }
@@ -45,6 +45,6 @@ void write_end(void)
 void move(void) 
 {
 	digitalWrite(RELAIS_2, HIGH);
-	delay(500*3);
+	delay(TIME*3);
 	digitalWrite(RELAIS_2, LOW);
 }
