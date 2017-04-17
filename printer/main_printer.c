@@ -33,13 +33,14 @@ int main(void) {
 	}
 	
 	do
-   {
-      c = fgetc(pFile);
-      if( feof(pFile) )
-      {
-         break ;
-      }
-      switch(c) {
+   	{
+      		c = fgetc(pFile);
+      		if( feof(pFile) )
+      		{
+			break ;
+      		}
+      		switch(c) 
+		{
   			case '.':
   				write_short();
   				break;
@@ -50,32 +51,11 @@ int main(void) {
   				move();
   				break;
 		  }
-	delay(100);
-	move();
-	
-   }while(1);
-
-	
-  	/*
-  	while(c != EOF) {
-  		c = fgetc(pFile);
-  		
-  		switch(c) {
-  			case '.':
-  				write_short();
-  				break;
-  			case '-':
-  				write_long();
-  				break;
-  			case ' ':
-  				move();
-  				break;
-		  }
-		
+		delay(100);
 		move();
-	  }
-	*/
+   	} while(1);
+	
 	write_end();
-    fclose (pFile);
-    return 0;
-	}
+    	fclose (pFile);
+    	return 0;
+}
